@@ -1,0 +1,2 @@
+# High-Performance-Programming
+In Computational Physics, it is common the need for large-scale simulations as well as the analysis of large amounts of data. In such cases, program development must carefully consider performance issues, including making good use of existing computing resources and taking advantage of the many available forms of parallelism. This course will teach students how to develop programs taking into account performance on current architectures as well as relevant parallel programming techniques.
