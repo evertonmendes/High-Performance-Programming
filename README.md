@@ -9,11 +9,10 @@ iterative, such as the power iteration.
 
 The three folders are implementations of power iteration method.
 
-- Sequential
- 
-Implementation of the power iteration method using a linked list
-  
+- Sequential  
   - wrong implementation due to bad use of pointers in vec = new_vec, problem fixed in Parallel folders
+
+Implementation of the power iteration method using a linked list
 
 - Parallel OpenMP
 
