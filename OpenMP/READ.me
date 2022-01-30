@@ -1,0 +1,17 @@
+This repository contain 5 important files:
+
+- FindEigen_omp.c   , Power iteration with parallelization
+- FindEigen.c       , Sequential Power iteration
+- AdjList.c         , Representation of a adjancency List
+- Run_tests.py      , Run the case tests in Gonzalo Test folder(however the files need to be copied in the same path as the folders Gonzalo Test, img, My_Results)
+- Plot.py           , Plots the analysis made from the results of the My_Results folder
+
+
+command to compile FindEigen.c,  gcc -O2 -Wall -Wextra -Wpedantic FindEigen.c -o FindEigen -lm
+command to compile FindEigen_omp.c, gcc -fopenmp -O2 -Wall -Wextra -Wpedantic FindEigen_omp.c -o FindEigen_omp -lm
+
+#attention, read line 6
+Run_tests.py for default does 50 iteration and creates outputs for Sequential and Parallel code
+    after run the code, you just have to put data_analysis.json and data_analysis_omp.json into My_Results folder
+
+Plot.py creates the images used in the report using data from the My_results folder
