@@ -10,7 +10,7 @@ iterative, such as the power iteration.
 The three folders are implementations of power iteration method.
 
 - Sequential  
-  - wrong implementation due to bad use of pointers in vec = new_vec, problem fixed in Parallel folders
+  - Wrong implementation due to bad use of pointers in vec = new_vec, problem fixed in Parallel folders
 
 Implementation of the power iteration method using a linked list
 
@@ -19,6 +19,8 @@ Implementation of the power iteration method using a linked list
 Implementation of the power iteration method using a linked list and parallelization. OpenMP is an application programming interface for multi-process shared memory programming on multiple platforms.
 
 - Parallel MPI
+  - The code needs to be changed to read the graph only by rank 0, and from there distributed to the other processors through MPI_scatterrv (for this it is necessary to create an MPI type that receives the nodes of a weighted linked list). Another problem in the code is the use of many unnecessary MPI_Barrier.
+
 
 Implementation of the power iteration method using a linked list and parallelization. The Open MPI Project is an open source Message Passing Interface implementation that is developed and maintained by a consortium of academic, research, and industry partners. Open MPI is therefore able to combine the expertise, technologies, and resources from all across the High Performance Computing community in order to build the best MPI library available.
 
